@@ -11,7 +11,9 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {for (let i = 0; i < tutorials.length; i++) {
+const titleCased = () => {
+  
+  for (let i = 0; i < tutorials.length; i++) {
 
   let mystring = tutorials[i].toString();
   let str = mystring.split(" ");
@@ -50,5 +52,5 @@ const titleCased = () => {for (let i = 0; i < tutorials.length; i++) {
 
 //console.log(taghreed(tutorials))
 
-//let myArrMap = tutorials.map(taghreed);
-console.log(titleCased(tutorials));
+let myArrMap = tutorials.map(titleCased);
+console.log(myArrMap);
