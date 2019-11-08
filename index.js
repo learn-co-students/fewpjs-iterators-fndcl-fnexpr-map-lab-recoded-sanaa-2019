@@ -50,7 +50,7 @@ const titleCased = () => {
 };*/
 
 
-//console.log(taghreed(tutorials))
+console.log(titleCased());
 
 let myArrMap = tutorials.map(titleCased);
 console.log(myArrMap);
