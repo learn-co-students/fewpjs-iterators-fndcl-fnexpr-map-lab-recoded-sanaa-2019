@@ -1,4 +1,4 @@
-const tutorials = [
+let tutorials = [
   'what does the this keyword mean?',
   'What is the Contutorialuctor OO pattern?',
   'implementing Blockchain Web API',
@@ -11,6 +11,9 @@ const tutorials = [
   'what is JSONP?'
 ];
 
-const titleCased = () => {
-  return tutorials
-}
+let map = tutorials.map(function titleCased(str){
+  return str.toLowerCase().split(' ').map(function(chunk){
+    return chunk.charAt(0).toUpperCase() + chunk.substring(1);
+}).join(' ');
+titleCased(tutorials);
+})
