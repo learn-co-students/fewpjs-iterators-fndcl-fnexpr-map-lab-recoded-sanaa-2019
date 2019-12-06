@@ -21,5 +21,6 @@ let strs = tutorials[i].split(' ');
   u.push(g)
   
   }
+  return u
 
 }
